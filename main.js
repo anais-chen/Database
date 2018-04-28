@@ -7,4 +7,14 @@ $(document).ready(function(){
     clicked.find ("#title").fadeOut (1000);
     clicked.find (".links").fadeIn (1000);
   });
+  $(".password").click(function(element){
+    element.preventDefault()
+    var login = prompt ("Password?");
+    if (login == "gum") {
+      window.location.href = element.currentTarget.href;
+    } else {
+        alert ("no.")
+      }
+
+  })
 });
